@@ -12,22 +12,22 @@ public class Security {
     @GeneratedValue()
     private long portfolioId;
 
-    @Column
+    @Column(nullable=false)
     private Portfolio portfolio;
 
-    @Column
+    @Column(nullable=false)
     private String securityName;
 
-    @Column
+    @Column(nullable=false)
     private String securityCategory;
 
-    @Column
+    @Column(nullable=false)
     private String purchaseDate;
 
-    @Column
+    @Column(nullable=false)
     private String purchacePrice;
 
-    @Column
+    @Column(nullable=false)
     private String quantity;
 
     protected Security() {

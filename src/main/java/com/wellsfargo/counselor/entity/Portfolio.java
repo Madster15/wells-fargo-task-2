@@ -13,10 +13,10 @@ public class Portfolio {
     @GeneratedValue()
     private long PortfolioId;
 
-    @Column
+    @Column(nullable=false)
     private Client client;
 
-    @Column
+    @Column(nullable=false)
     private String createDate;
 
     protected Portfolio() {
